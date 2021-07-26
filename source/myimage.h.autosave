@@ -1,0 +1,19 @@
+#ifndef MYIMAGE_H
+#define MYIMAGE_H
+
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+
+class MyImage
+{
+private:
+      cv::Mat original_img;
+      cv::Mat resize_img;
+public:
+    MyImage();
+    void Set_Original_img(cv::Mat);
+    cv::Mat Get_Original_img();
+    cv::Mat Get_Resize_img();
+};
+
+#endif // MYIMAGE_H
